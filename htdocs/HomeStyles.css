@@ -297,8 +297,8 @@ iframe{
 
 #footer{
 	width: 99%;
+  height: 0%;
 	background: #000000;
-	height: 5%;
 	font-size: 18pt;
 	padding-top: 15px;
 	color: #FFFFFF;

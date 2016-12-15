@@ -1,4 +1,8 @@
-<html>
+﻿<html>
+<?php
+  $url = $_GET['url'];
+  echo $url;
+?>
 <head>
 	<meta charset = "utf-8">
 	<title>Новостной сайт</title>
@@ -7,41 +11,8 @@
 
 <body bgcolor="black">
 	<div>
-		<header>
-			<div id="logos2">
-				<img src="apple1.png" style="width:100%; height: 100%;">
-			</div>
-			<div class = "title"><b>Новости о технике Apple</b></div>
-			<div class = "login">
-				<a href="#win1" class="button button-green">Вход/Регистрация</a>
-				<a href="#x" class="overlay" id="win1"></a>
-				<div class="popup">
-					<label>Логин:</label>	
-					<br>			
-					<input type="text" name="login"></input> 
-					<br>
-					<label>Пароль:</label>	
-					<br>			
-					<input type="text" name="Password"></input> 
-					<br>
-					<input type="submit" value="Войти" onClick='location.href="HomePage.html"'>
-					<a href="RegistrationPage.html">Регистрация</a>     
-    				<a class="close"title="Закрыть" href="#close"></a>
-   				</div>
-			</div>
-		</header>
-		<ul id="navbar">
-			<li><a href="HomePage.html">Главная</a></li>
-			<li><a href="CategoriesPage.html">Новости</a></li>
-			<li><a href="#">Категории</a>
-				<ul>
-					<li><a href="NewsPage.html">iPhone</a></li>
-					<li><a href="NewsPage.html">iPad</a></li>
-					<li><a href="NewsPage.html">Mac</a></li>
-				</ul>
-			</li>
-			<li><a href="ContactsPage.html">Контакты</a></li>
-		</ul>
+		<?php include('header.php');?>	
+		<?php include('menu.php');?>	
 	</div>
 	<div id="menu">
 		<div class="slideshow-container">
@@ -162,26 +133,6 @@
 		</div>		
 
 	</div>
-	<div id="footer">
-		<div id="logos1">
-			<img src="apple1.png" style="width:100%;height: 100%;">
-		</div>
-		<div id="year">2016</div>
-		<div id="logos">
-			<a href="https://www.instagram.com/jeniaziber_/">
-				<img src="instagram.png" style="width:100%;height: 100%;">
-			</a>
-		</div>
-		<div id="logos">
-			<a href="https://twitter.com/_ziber">
-				<img src="twitter.png" style="width:100%;height: 100%;">
-			</a>
-		</div>
-		<div id="logos">
-			<a href="https://vk.com/jenia_ziber">
-				<img src="vk.png" style="width:100%;height: 100%;">
-			</a>
-		</div>		
-	</div>
+	<?php include('footer.php');?>	
 </body>
 </html> 
